@@ -3,9 +3,16 @@
 <body>
 
 <div 
-onclick = changeText(this)="Haha"
+onclick(obj)
 style="background-color:#8727E6;width:100px;height:100px;padding:40px;">
 Water</div>
+  
+<script>
+function onClick(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "Haha";
+}
+  </script>
 
 </body>
 </html> 
