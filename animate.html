@@ -31,7 +31,7 @@ body::after {
 
 // Cylinder --------------------------------------
 
-.cylinder {
+div.cylinder {
   animation-iteration-count: infinite;
   animation-name: tunnel;
   animation-timing-function: linear;
@@ -48,7 +48,7 @@ body::after {
 
 // Side ------------------------------------------
 
-.side {
+div.side {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/231848/fractal-fire-sky-seamless-background-orig.jpg);
   background-size: 32em 10em;
   filter: hue-rotate(-11.25deg);
@@ -64,7 +64,7 @@ body::after {
     }
   }
 
-  .cylinder:nth-child(2) & {
+  div.cylinder:nth-child(2) & {
     opacity: 0.5;
   }
 }
