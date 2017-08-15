@@ -2,5 +2,21 @@
 <html> 
   <body>
     <p>hello World</p>
+    body {
+  height: 100vh;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3999/Tilt-Shift_-_Cityscene.jpg);
+  background-size: 110% 110%;
+  background-position: center center;
+  animation: shrink 5s infinite alternate;
+}
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+ Run code snippetHide results
   </body>
 </html>
