@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
+
 .wrapper
   - (1..62).each do
     %i
 
 %a{:href => "#black", :id => "black"}
 
+<style>
 @import "compass/css3";
 
 $particles: 62; // has to match nodes in dom
@@ -101,6 +103,6 @@ i {
   
   &:after { content: ''; }
 }
-
+  </style>
 </body>
 </html>
