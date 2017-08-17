@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: Black;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+    align-items: middle;
+    align-self: middle;
+    vertical-align:middle;
+}
+
+.button {
+    background-color: Transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    align-items: middle;
+    align-self: middle;
+    vertical-align:middle;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+<body>
+<h1>YOU ARE A NOMADIC TRAVELER BUT UNIQUE AS YOU TRAVEL BETWEEN WORLDS, THIS IS YOUR JOURNEY THRU FANTASTICAL WORLDS<br>
+    click enter </h1>
+    <p>
+<button id="chow" class=button onclick="showIFrame()"> enter <button>
+</p>
+<script>
+// function hideToggle(button, elem) {
+//
+// $(button).toggle( function () {
+//
+//     $(elem).hide();
+//
+//  },function () {
+//
+//     $(elem).show();
+//
+//  });
+//
+// }
+// hideToggle(".button1", ".iframe1");
+
+function showIFrame() {
+ var iframe = document.getElementById("iframe1");
+ iframe.style.display="block";
+var hide = document.getElementById("chow");
+  hide.style.display="none";
+
+// iframe.style.display="block";
+
+
+}
+</script>
+
+<iframe class = "frame" style="display:none" id="iframe1" allowtransparency="true" width="685" height="602"
+ src="https://scratch.mit.edu/projects/embed/171374362/?autostart=false" frameborder="0" allowfullscreen;
+></iframe>
+
+
+</body>
+</html>
