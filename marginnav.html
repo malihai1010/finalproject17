@@ -6,6 +6,19 @@ body {
     margin: 0;
 }
 
+.zoomin img {
+  height: 200px;
+  width: 200px;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+.zoomin img:hover {
+  width: 300px;
+  height: 300px;
+}
+    
 p {
     font-family: 'Times New Roman', serif;
     font-size: 1vw;
@@ -55,8 +68,10 @@ li a:hover:not(active) {
   <li><a class="active" href="marginnav.html">About</a></li>
 </ul>
  
+<div>
 <h1 style = "margin-top:5vh;text-align:center;">Creators</h1>  
-<hr style = "width:2vw;border-color:black;" size="300px">
+<hr style = "width:4vw;border-color:black;" size="10px">
+</div>
     
 <style>    
 img {
@@ -65,10 +80,12 @@ img {
 }
     
 </style>
+<div class="zoomin">
 <img class="circular--square" src="castle.jpg" alt="Castle" style="width:40vw" <!--"width="400" height="300">-->
+</div>
 <br>
 <div style="margin-left:15%;padding:1px 16px;height:1000px;">
-    <p style="text-align:center;font-size:3vw">Let's get personal:</p>
+    <p style="text-align:center;font-size:3vw">Let's get a little personal</p>
 </div>
 
   <!--<h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
