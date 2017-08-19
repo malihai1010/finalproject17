@@ -26,7 +26,8 @@ background-position: center;
   
 .rotation {
   -webkit-animation: rotating-function 3s linear infinite;
-  position:absolute;
+  position:relative;
+  overflow:hidden;
 }
 
 @-webkit-keyframes rotating-function {
@@ -43,6 +44,6 @@ background-position: center;
 <body>
   <div class="rotation">
     <img src="wormhole.png">
-<div style = "position: relative; overflow: hidden; top:0;bottom:0;left:0;right:0;" </div>
+<div style = "position: absolute; overflow: hidden; top:0;bottom:0;left:0;right:0;" </div>
 </body>
 </html>
