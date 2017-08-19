@@ -32,8 +32,6 @@ div {
 
 .spin   {
   -webkit-animation: rotating-function 1s linear infinite;
-  -moz-animation: rotating-function 1s linear infinite;
-  animation: rotating-function 1s linear infinite;
 }
 
   
@@ -42,19 +40,6 @@ div {
   to {-webkit-transform: rotate(360deg);}
   position: relative;
   overflow: hidden;
-}
-@-moz-keyframes rotating-function { 
-  100% { 
-    from {-moz-transform: rotate(0deg);}
-    to {-moz-transform: rotate(360deg);}
-  } 
-}
-
-@keyframes rotating-function { 
-  100% { 
-    from {-webkit-transform: rotate(360deg);}
-    to {-webkit-transform: rotate(360deg);} 
-  } 
 }
 
 </style>
