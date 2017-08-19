@@ -3,23 +3,29 @@
 <style>
 
 body  {
-  background-color: navy;
+  background-color: black;
   background-size: cover;
-  background-position: center;
   overflow:hidden;
 }
 
 div   {
   background-image: url(wormhole.png);
-  background-position-x: 40%;
+  background-position-x: 50%;
   background-position-y: 0%;
+  background-position: center;  
+  background-repeat: no-repeat;
+  background attachment: fixed;
   -webkit-animation: zoomin 5s 1;
   -webkit-animation: rotating-function 3s linear infinite;
 }
   
 @-webkit-keyframes zoomin {
-  0% {-webkit-transform: scale(1);}
-  100% {-webkit-transform: scale(5);}
+  0% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(5);
+  }
   position: relative;
   overflow: hidden;
 }
