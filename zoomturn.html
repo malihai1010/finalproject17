@@ -2,21 +2,25 @@
 <html>
 <style>
 
+body  {
+  background-color: navy;
+  background-size: cover;
+  background-position: center;
+  overflow:hidden;
+}
+
 div   {
-background-image: url(wormhole.png);
-background-position-x: 40%;
-background-position-y: 0%;
-background-size: cover;
-background-position: center;
-background-color: navy;
-overflow:hidden;
--webkit-animation: zoomin 5s 1;
--webkit-animation: rotating-function 3s linear infinite;
+  background-image: url(wormhole.png);
+  background-position-x: 40%;
+  background-position-y: 0%;
+  -webkit-animation: zoomin 5s 1;
+  -webkit-animation: rotating-function 3s linear infinite;
 }
   
 @-webkit-keyframes zoomin {
   0% {-webkit-transform: scale(1);}
   100% {-webkit-transform: scale(5);}
+  position: relative;
   overflow: hidden;
 }
   
