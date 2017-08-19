@@ -8,46 +8,29 @@ background-position-x: 40%;
 background-position-y: 0%;
 background-size: cover;
 background-position: center;
-position:relative;
-background-color: navy;
+background-color: black;
 overflow:hidden;
-}
-
-  
-.forward  {
-   -webkit-animation: zoomin 5s 1;
+-webkit-animation: zoomin 5s 1;
+-webkit-animation: rotating-function 3s linear infinite;
 }
   
 @-webkit-keyframes zoomin {
-0% {
-  -webkit-transform: scale(1);}
-100% {
-  -webkit-transform: scale(5);}
-overflow: hidden;
+  0% {-webkit-transform: scale(1);}
+  100% {-webkit-transform: scale(5);}
+  overflow: hidden;
 }
   
-  
-.spin {
-  -webkit-animation: rotating-function 3s linear infinite;
-}
-
 @-webkit-keyframes rotating-function {
-  from {
-    -webkit-transform: rotate(0deg);}
-  to {
-    -webkit-transform: rotate(360deg);}
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+  position: center;
+  overflow: hidden;
 }
 
-  
 </style>
 
   
 <body>
-<div style = "position: absolute; top:0;bottom:0;left:0;right:0;">
-  <div class= "forward">
-  <img src="wormhole.png"></div>
-  <div class= "spin">
-<img src="wormhole.png"></div>
- </div>
+<div style = "position: absolute; top:0;bottom:0;left:0;right:0;"> </div>
 </body>
 </html>
