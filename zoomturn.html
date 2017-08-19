@@ -32,8 +32,8 @@ div {
 
 .spin   {
   -webkit-animation: rotating-function 1s linear infinite;
-  -moz-animation:rotating-function 1s linear infinite;
-  animation:rotating-function 1s linear infinite;
+  -moz-animation: rotating-function 1s linear infinite;
+  animation: rotating-function 1s linear infinite;
 }
 
   
@@ -45,14 +45,15 @@ div {
 }
 @-moz-keyframes rotating-function { 
   100% { 
-    -moz-transform: rotate(360deg); 
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
   } 
 }
 
 @keyframes rotating-function { 
   100% { 
-    -webkit-transform: rotate(360deg); 
-    transform:rotate(360deg); 
+    from {-webkit-transform: rotate(360deg);}
+    to {-webkit-transform: rotate(360deg);} 
   } 
 }
 
@@ -62,7 +63,7 @@ div {
 <body>
   <div class = "spin">
     <img src = "wormhole.png">
-<div style = "position:absolute; top:0;bottom:0;left:0;right:0;margin:auto;">
+<div style = "top:0;bottom:0;left:0;right:0;margin:auto;">
     </div>
   </div>
 </body>
