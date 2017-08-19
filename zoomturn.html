@@ -14,8 +14,9 @@ div   {
   background-position: center;  
   background-repeat: no-repeat;
   background attachment: fixed;
+  overflow: hidden;
   -webkit-animation: zoomin 5s 1;
-  -webkit-animation: rotating-function 3s linear infinite;
+  -webkit-animation: rotating-function 1s linear infinite;
 }
   
 @-webkit-keyframes zoomin {
@@ -26,7 +27,6 @@ div   {
     -webkit-transform: scale(5);
   }
   position: relative;
-  overflow: hidden;
 }
   
 @-webkit-keyframes rotating-function {
