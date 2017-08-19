@@ -5,15 +5,18 @@
 body   {
   background-color: black;
   overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
   }
   
 div {
     background-image: url("wormhole.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 0%;
     background-size: cover;
     -webkit-animation: zoomin 5s 1;
 }
@@ -44,7 +47,7 @@ div {
 <body>
   <div class = "spin">
     <img src = "wormhole.png">
-<div style = "position:absolute; top:0;bottom:0;left:0;right:0;">
+<div style = "position:absolute; top:0;bottom:0;left:0;right:0;margin:auto;">
     </div>
   </div>
 </body>
