@@ -59,6 +59,11 @@ li a:hover:not(active) {
     color: white;
 }
 
+img {
+    border-radius: 50%;
+    text-align: center;
+}
+    
 </style>
 </head>
 <body style="background-color:#e2f3ff;">
@@ -73,13 +78,6 @@ li a:hover:not(active) {
 <hr style = "width:4vw;border-color:black;" size="10px">
 </div>
     
-<style>    
-img {
-    border-radius: 50%;
-    text-align: center;
-}
-    
-</style>
 <div class="zoomin">
 <img class="circular--square" src="castle.jpg" alt="Castle" <!--style="width:40vw" "width="400" height="300">-->
 </div>
@@ -88,6 +86,35 @@ img {
 
 <p style="text-align:center;font-size:3vw">Let's get a little personal</p>
 
+<div class="row">
+  ::before
+  <div class="col-sm-3">
+    <img class="circular--square" src="castle.jpg" alt="Mariana" style="width:11vw;">
+    <h2>Mariana</h2>
+    <p>Insert you're bio here</p>
+  </div>
+  <div class="col-sm-3">
+    <img class="circular--square" src="castle.jpg" alt="Maliha" style="width:11vw;">
+    <h2>Maliha</h2>
+    <p>Insert you're bio here</p>
+  </div>
+  <div class="col-sm-3">
+    <img class="circular--square" src="castle.jpg" alt="Noelia" style="width:11vw;">
+    <h2>Noelia</h2>
+    <p>Insert you're bio here</p>
+  </div>
+  <div class="col-sm-3">
+    <img class="circular--square" src="castle.jpg" alt="Ginevra" style="width:11vw;">
+    <h2>Ginevra</h2>
+    <p>Insert you're bio here</p>
+    ::after
+  </div>
+  <br>
+  <br>
+  <br>
+  ::after
+</div>
+    
   <!--<h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
   <p>Notice that this div element has a left margin of 12%. This is because the side navigation is set to 12% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
   <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>-->
