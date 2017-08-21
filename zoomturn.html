@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
 <style>
-
 body   {
   background-color: black;
   overflow: hidden;
   top: 0%;
   left: 25%;
-  transform: translate(-0%, -25%);
+  transform: translate(0%, -25%);
   }
-  
+
 div {
     background-image: url("wormhole.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: no-repeat fixed center;
     background-size: cover;
-    background-position: center;
     background-position-x: 50%;
-    background-position-y: 0%;
+    background-position-y: 50%;
     -webkit-animation: zoomin 10s infinite;
 }
-  
+
+#picture  {
+
+}
+
 @-webkit-keyframes zoomin {
     0% {
       -webkit-transform: scale(5);
@@ -28,29 +29,29 @@ div {
     100% {
       -webkit-transform: scale(0.4);
     }
+    position: center;
+    overflow: hidden;
 }
-
 .spin   {
   -webkit-animation: rotating-function 1s linear infinite;
   transform-origin: 50% 50%;
   background-position: center;
 }
 
-  
 @-webkit-keyframes rotating-function {
   from {-webkit-transform: rotate(0deg);}
   to {-webkit-transform: rotate(360deg);}
   position: relative;
   overflow: hidden;
 }
-
 </style>
 
-  
+
 <body>
-    <div class = "spin">
+  <div class = "spin">
     <img src = "wormhole.png">
-  <div style = "position: absolute; top:0;bottom:0;left:0;right:0;">
+<div style = "position: absolute; top:0;bottom:0;left:0;right:0;">
+
     </div>
   </div>
 </body>
