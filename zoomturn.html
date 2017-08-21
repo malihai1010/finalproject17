@@ -15,25 +15,22 @@ div {
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
-    -webkit-animation: zoomin 10s infinite;
+    -webkit-animation: zoomin 8s linear 1;
 }
 
-#picture  {
-
-}
 
 @-webkit-keyframes zoomin {
     0% {
-      -webkit-transform: scale(5);
+      -webkit-transform: scale(1);
     }
     100% {
-      -webkit-transform: scale(0.4);
+      -webkit-transform: scale(10);
     }
     position: center;
     overflow: hidden;
 }
 .spin   {
-  -webkit-animation: rotating-function 1s linear infinite;
+  -webkit-animation: rotating-function 1s linear 8;
   transform-origin: 50% 50%;
   background-position: center;
 }
