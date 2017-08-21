@@ -20,7 +20,7 @@ color: blue;
         .img-container {
         display: block;
         }
-    #imgDisp {
+    .img-disp {
       height: 500px;
     }
 </style>
@@ -33,12 +33,12 @@ color: blue;
 <span onClick = "changeImage('water-painted.jpg')">Water</span>
   </div>
   <div class"img-container">
-<img id = "imgDisp" src  = "air-painted.jpg">
+    <img class="img-disp" src="air-painted.jpg">
   </div>
   
     <script>
   function changeImage(imgName) {
-    var image = document.getElementById('imgDisp');
+    var image = document.getElementByClassName('img-disp');
     image.src = imgName;
   }
   </script>
