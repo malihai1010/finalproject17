@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<style>
+body   {
+  background-color: black;
+  overflow: hidden;
+  top: 0%;
+  left: 25%;
+  transform: translate(0%, -25%);
+}
+
+div {
+  background-image: url("wormhole.png");
+  background-repeat: no-repeat fixed center;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  -webkit-animation: zoomin 8s linear 1;
+}
+
+
+
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(10);
+  }
+  position: center;
+  overflow: hidden;
+}
+.spin   {
+  -webkit-animation: rotating-function 1s linear 8;
+  transform-origin: 50% 50%;
+  background-position: center;
+}
+
+@-webkit-keyframes rotating-function {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+  position: relative;
+  overflow: hidden;
+}
+
+
+</style>
+<head>
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+     <script type="text/javascript">
+
+
+function TimerSwitch(pic) {
+      TimerRunning=true;
+      var timer = setTimeout(function() { SwitchPic(pic); }, 400);
+    }
+    function SwitchPic(pic) {
+      pic.src = "water-painted.jpg";
+    }
+
+</script>
+</head>
+
+<body>
+
+  <div class = "spin">
+    <img id ="wormhole" src = "wormhole.png" onclick="TimerSwitch(this)" />
+    <div style = "position: absolute; top:0;bottom:0;left:0;right:0;">
+      <!-- <div id="wormhole">
+      </div> -->
+  </div>
+  </body>
+  </html>

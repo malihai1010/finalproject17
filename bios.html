@@ -1,0 +1,74 @@
+<!--#menu {
+    top: 0;
+    left: 0;
+    height: 4.5vw;
+    width: 100%;
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    padding: 0;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    z-index: 70;
+    position: fixed;
+    background-color: #055C70;-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+div {
+    width: 10px;
+    height: 10px;
+    background: red;
+	-webkit-transition: width 2s, height 2s; /* For Safari 3.1 to 6.0 */
+    /*transition: width 2s, height 2s;*/
+}
+
+div:hover {
+    width: 300px;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h2>Vertical Navigation Bar</h2>
+<p>In this example, we create an "active" class with a green background color and a white text. The class is added to the "Home" link.</p>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>

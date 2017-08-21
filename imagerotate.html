@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+.hole   {
+  position:absolute;
+    top:40%;
+    left:40%;
+    width:60;
+    height:60;
+      image: url("wormhole.png");
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-duration: 1s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+</style>
+<body>
+  <div class= "hole">
+    <img src="wormhole.png" alt="wormhole" style="width: 500px; height: 500px;">
+  </div>
+</body>
+</html>
