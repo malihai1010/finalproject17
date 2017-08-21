@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 <html>
+
+<style>
+.button {
+    background-color: Transparent;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    align-items: middle;
+    align-self: middle;
+    vertical-align:middle;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
 <body>
-  <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+
+  <img id = "air" src  = "air-painted.jpg" style = "display: none" width="100%" height="100%" >
+  <button class="button" onclick = "document.getElementById('air').style.display = 'block'">Air </button>
+
+  <img id = "earth" src = "earth-painted.jpg" style = "display: none" width="100%" height="100%">
+  <button class=button onclick = "document.getElementById('earth').style.display = 'block'">Earth</button>
+
+  <img id = "fire" src = "fire-painted.jpg" style = "display: none" width="100%" height="100%">
+  <button class=button onclick = "document.getElementById('fire').style.display = 'block'">Fire</button>
+
+  <img id = "water" src = "water-painted.jpg" style = "display: none" width="100%" height="100%">
+  <button class=button onclick = "document.getElementById('water').style.display = 'block'">Water</button>
 
 </body>
 </html>
