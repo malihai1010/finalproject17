@@ -1,19 +1,10 @@
 <!DOCTYPE html>
 <html>
-<body>
-  <script>
-  function changeImage(imgName)
-  {
-    image = document.getElementById('imgDisp');
-    image.src = imgName;
-  }
-  </script>
-
-  <style type="text/css">
-body
-{
+  <head>
+      <style type="text/css">
+        body {
 font-family: Arial, Helvetica, sans-serif;
-}
+        }
 span
 {
 margin-left: 50px;
@@ -30,10 +21,23 @@ color: blue;
       height: 500px;
     }
 </style>
+  </head>
+<body>
+  <div>
 <span onClick = "changeImage('air-painted.jpg')">Air</span>
 <span onClick = "changeImage('earth-painted.jpg')">Earth</span>
 <span onClick = "changeImage('fire-painted.jpg')">Fire</span>
 <span onClick = "changeImage('water-painted.jpg')">Water</span>
+  </div>
+  <div>
 <img id = "imgDisp" src  = "air-painted.jpg">
+  </div>
+  
+    <script>
+  function changeImage(imgName) {
+    var image = document.getElementById('imgDisp');
+    image.src = imgName;
+  }
+  </script>
 </body>
 </html>
