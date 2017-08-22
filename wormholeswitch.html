@@ -9,7 +9,59 @@ body   {
   left: 25%;
   transform: translate(0%, -25%);
 }
-
+  
+div  {
+    background-image: url("wormhole.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+<!DOCTYPE html>
+<html>
+  <head>
+      <style type="text/css">
+        body {
+font-family: Arial, Helvetica, sans-serif;
+        }
+span
+{
+margin-left: 50px;
+text-transform: uppercase;
+font-size: 14px;
+}
+span:hover
+{
+text-decoration: underline;
+cursor: pointer;
+color: blue;
+}
+        .img-container {
+        display: block;
+        }
+    .img-disp {
+      height: 500px;
+    }
+</style>
+  </head>
+<body>
+  <div>
+<span onClick = "changeImage('air-painted.jpg')">Air</span>
+<span onClick = "changeImage('earth-painted.jpg')">Earth</span>
+<span onClick = "changeImage('fire-painted.jpg')">Fire</span>
+<span onClick = "changeImage('water-painted.jpg')">Water</span>
+  </div>
+  <div class"img-container">
+    <img class="img-disp" src="air-painted.jpg">
+  </div>
+  
+    <script>
+  function changeImage(imgName) {
+    var image = document.getElementByClassName('img-disp');
+    image.src = imgName;
+  }
+  </script>
+</body>
+</html>
 </style>
 
 <body id="wormhole">
