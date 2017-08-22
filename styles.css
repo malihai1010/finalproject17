@@ -14,5 +14,6 @@ body {
   float: left;
 }
 .col-right {
+  float: right;
   text-align: center;
 }
