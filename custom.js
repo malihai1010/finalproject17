@@ -40,3 +40,29 @@ function downNavigation(){
     listElement.innerHTML = choices[current_word_index +1];
   }
 }
+function changeImage(imgName){
+  var current_word= document.getElementById("changing-words").innerHTML;
+    if(current_word == "Air"){
+    document.getElementById("air-img").style.display="block";
+    image = document.getElementById('air-img');
+    image.src = 'air-painted.jpg';
+  }
+    else if(current_word == "Earth"){
+    document.getElementById("air-img").style.display="block";
+    image = document.getElementById('air-img');
+    image.src = 'earth-painted.jpg';
+  }
+  else if(current_word == "Fire"){
+    document.getElementById("air-img").style.display="block";
+    image = document.getElementById('air-img');
+    image.src = 'fire-painted.jpg';
+  }
+else if(current_word == "Water"){
+    document.getElementById("air-img").style.display="block";
+    image = document.getElementById('air-img');
+    image.src = 'water-painted.jpg';
+  }
+   console.log(current_word)
+
+}
+
