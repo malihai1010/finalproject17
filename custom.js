@@ -65,4 +65,3 @@ else if(current_word == "Water"){
    console.log(current_word)
 
 }
-
