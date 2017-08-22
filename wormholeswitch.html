@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <style>
-h1   {
+body   {
   background-color: black;
   overflow: hidden;
   top: 0%;
@@ -19,15 +19,16 @@ div {
 
 </style>
 
-<h1 id="wormhole">
+<body id="wormhole">
     <div style = "position: absolute; top:0;bottom:0;left:0;right:0;">
     </div>
-    </h1>
-<body> 
+    
     <button onclick= "change('water-painted.jpg');">Water</button>
     <button onclick= "change('air-painted.jpg');">Air</button>
     <button onclick= "change('fire-painted.jpg');">Fire</button>
     <button onclick= "change('earth-painted.jpg');">Earth</button>
+    </body>
+
 
 <script type="text/javascript" src="js/jquery-1.4.2.min.js">
     function change(newImage)  {
@@ -40,5 +41,5 @@ div {
         background-size: cover;
     }
 </script>
-</body>
+
 </html>
