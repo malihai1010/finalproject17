@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <style>
-body   {
+h1   {
   background-color: black;
   overflow: hidden;
   top: 0%;
@@ -11,14 +11,34 @@ body   {
 
 div {
     background-image: url("wormhole.png");
-    background-repeat: no-repeat fixed center;
+    background-repeat: no-repeat; 
+    background-alignment: fixed; 
+    background-position: center;
     background-size: cover;
 }
 
 </style>
 
-<body>
-    <div  id = "wormhole" style = "position: absolute; top:0;bottom:0;left:0;right:0;">
+<h1 id="wormhole">
+    <div style = "position: absolute; top:0;bottom:0;left:0;right:0;">
     </div>
+    </h1>
+<body> 
+    <button onclick= "change('water-painted.jpg');">Water</button>
+    <button onclick= "change('air-painted.jpg');">Air</button>
+    <button onclick= "change('fire-painted.jpg');">Fire</button>
+    <button onclick= "change('earth-painted.jpg');">Earth</button>
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js">
+    function change(newImage)  {
+        var back = document.getElementbyId(wormhole);
+        back.style.image = newImage;
+        background-image = newImage;
+        background-repeat: no-repeat; 
+        background-alignment: fixed; 
+        background-position: center;
+        background-size: cover;
+    }
+</script>
 </body>
 </html>
