@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body   {
-  background-color: black;
-  overflow: hidden;
-  top: 0%;
-  left: 25%;
-  transform: translate(0%, -25%);
-  }
-div {
-    background-image: url("wormhole.png");
-    background-repeat: no-repeat fixed center;
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    -webkit-animation: zoomin 8s linear 1;
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif; background-color: black}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
-@-webkit-keyframes zoomin {
-    0% {
-      -webkit-transform: scale(1);
-    }
-    100% {
-      -webkit-transform: scale(10);
-    }
-    position: center;
-    overflow: hidden;
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.nofade   {
+  -webkit-animation-name: stay;
+  -webkit-animation-duration: infinite
+}
+
 .spin   {
   -webkit-animation: rotating-function 1s linear 8;
   transform-origin: 50% 50%;
   background-position: center;
 }
+
+.travel   {
+  -webkit-animation: zoomin 8s linear 1;
+  overflow: hidden;
+}
+
 @-webkit-keyframes rotating-function {
   from {-webkit-transform: rotate(0deg);}
   to {-webkit-transform: rotate(360deg);}
   position: relative;
   overflow: hidden;
 }
-</style>
 
-
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript">
-function TimerSwitch(pic) {
-	TimerRunning=true;
-	var timer = setTimeout(function() { SwitchPic(pic); }, 400);
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
-function SwitchPic(pic) {
-	pic.src = "water-painted.jpg";
+
+@-webkit-keyframes stay  {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  100% { opacity: 1; }
 }
-</script>
 
-<body>
-<div class = "spin">
-   <img src = "wormhole.png">
-<div style = "position: absolute; top:0;bottom:0;left:0;right:0;" id="wormhole">
-</div>
-</div>
-
-</body>
-</html>
-<!--idea?
-<!DOCTYPE html>
-<html>
-<style>
-
-body   {
-    background-color: black;
-    overflow: hidden;
-    top: 0%;
-    left: 25%;
-    transform: translate(0%, -25%);
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
-	
-div {
-    background-image: url("wormhole.png");
-    background-repeat: no-repeat fixed center;
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    -webkit-animation: zoomin 8s linear 1;
-}		
-	
+
 @-webkit-keyframes zoomin {
   0% {
     -webkit-transform: scale(1);
@@ -92,35 +98,57 @@ div {
   position: center;
   overflow: hidden;
 }
-.spin   {
-  -webkit-animation: rotating-function 1s linear 8;
-  transform-origin: 50% 50%;
-  background-position: center;
-}
-	
-@-webkit-keyframes rotating-function {
-  from {-webkit-transform: rotate(0deg);}
-  to {-webkit-transform: rotate(360deg);}
-  position: relative;
-  overflow: hidden;
-}
 
 </style>
-
+</head>
 <body>
-<div id="myDiv" class = "spin"> 
-<img id="hole" src="wormhole.png">
-<div id="myDiv" style = "position: absolute; top:0;bottom:0;left:0;right:0;" onload="myFunction()">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="spin">
+  <div class="travel">
+  <img src="wormhole.png" style="width:100%;">
 </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="nofade">
+  <img src="water-painted.jpg" style="width:100%">
+</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
 </div>
 
 <script>
-   function myFunction()   {
-        document.getElementById(myDiv).style.backgroundImage = "url('water-painted.jpg')";
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    setTimeout(showSlides, 5000);
+    if (slideIndex> slides.length) {slideIndex = 2}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+
 }
 </script>
 
-
 </body>
 </html>
--->
