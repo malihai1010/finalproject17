@@ -3,26 +3,16 @@
 <style>
 body   {
   background-color: black;
+  background-image: urt("wormhole.png") no-repeat fixed center cover;
   overflow: hidden;
   top: 0%;
   left: 25%;
   transform: translate(0%, -25%);
 }
 
-div {
-    background-image: url("wormhole.png");
-    background-repeat: no-repeat; 
-    background-alignment: fixed; 
-    background-position: center;
-    background-size: cover;
-}
-
 </style>
 
 <body id="wormhole">
-    <div style = "position: absolute; top:0;bottom:0;left:0;right:0;">
-    </div>
-    
     <button onclick= "change('water-painted.jpg');">Water</button>
     <button onclick= "change('air-painted.jpg');">Air</button>
     <button onclick= "change('fire-painted.jpg');">Fire</button>
@@ -33,8 +23,7 @@ div {
 <script type="text/javascript" src="js/jquery-1.4.2.min.js">
     function change(newImage)  {
         var back = document.getElementbyId(wormhole);
-        back.style.image = newImage;
-        background-image = newImage;
+        back.body.style.backgroundImage = newImage;
         background-repeat: no-repeat; 
         background-alignment: fixed; 
         background-position: center;
