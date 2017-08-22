@@ -45,21 +45,11 @@ body {
     width: 100%;
     height: auto;
 	
-    position: fixed;
+    position: fixed center;
     top: 0;
     left: 0;
 }
-.img-disp {
-    min-height: 100%;
-    min-width: 1024px;
-          
-    width: 100%;
-    height: auto;
-	
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+
 </style>
 <body>
   <div>
@@ -68,9 +58,7 @@ body {
 <span onClick = "changeImage('fire-painted.jpg')">Fire</span>
 <span onClick = "changeImage('water-painted.jpg')">Water</span>
   </div>
-  <div class"img-container">
-    <img class="img-disp" src="air-painted.jpg">
-  </div>
+
   
     <script>
   function changeImage(imgName) {
@@ -80,7 +68,7 @@ body {
   </script>
 </body>
 </html>
-</style>
+
 
 
 
