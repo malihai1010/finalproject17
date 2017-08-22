@@ -49,11 +49,6 @@ body {font-family: Verdana,sans-serif; background-color: black}
   animation-duration: 1.5s;
 }
 
-.nofade   {
-  -webkit-animation-name: stay;
-  -webkit-animation-duration: infinite
-}
-
 .spin   {
   -webkit-animation: rotating-function 1s linear 8;
   transform-origin: 50% 50%;
@@ -75,12 +70,6 @@ body {font-family: Verdana,sans-serif; background-color: black}
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-
-@-webkit-keyframes stay  {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  100% { opacity: 1; }
 }
 
 /* On smaller screens, decrease text size */
@@ -114,9 +103,7 @@ body {font-family: Verdana,sans-serif; background-color: black}
 </div>
 
 <div class="mySlides fade">
-  <div class="nofade">
   <img src="water-painted.jpg" style="width:100%">
-</div>
 </div>
 
 </div>
