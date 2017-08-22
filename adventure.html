@@ -2,11 +2,12 @@
 <html>
   <head>
     <script src="https://use.fontawesome.com/138f5edfea.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 <body>
-  <div class="col-left col-display">Left</div>
-  <div class="col-right col-display">
+  <div class="col-left col-display"><img id="air-img" src="air-painted.jpg" style="display:none; max-width: 800px;">
+  </div>
+  <div class="col-right col-display container">
     <div class="arrow" onclick="upNavigation()">
       <i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i>
     </div>
@@ -18,7 +19,10 @@
     <div class="arrow" onclick="downNavigation()">
       <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
     </div>
+    <button onclick="changeImage()">Select</button>
   </div>
+</div>
   <script src="custom.js"></script>
+  <!-- <img id="air-img" src="air-painted.jpg" width="100" height="100" style="display:none"> -->
 </body>
 </html>
