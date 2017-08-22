@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <style>
 body   {
@@ -15,34 +15,52 @@ div  {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  
+  -->
+
 <!DOCTYPE html>
 <html>
-  <head>
-      <style type="text/css">
-        body {
-font-family: Arial, Helvetica, sans-serif;
-        }
-span
-{
-margin-left: 50px;
-text-transform: uppercase;
-font-size: 14px;
+<head>
+<style type="text/css">
+span   {
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
 }
-span:hover
-{
-text-decoration: underline;
-cursor: pointer;
-color: blue;
+
+span:hover   {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
 }
-        .img-container {
-        display: block;
-        }
-    .img-disp {
-      height: 500px;
-    }
+</head>
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.img-container {
+    min-height: 100%;
+    min-width: 1024px;
+          
+    width: 100%;
+    height: auto;
+	
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.img-disp {
+    min-height: 100%;
+    min-width: 1024px;
+          
+    width: 100%;
+    height: auto;
+	
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 </style>
-  </head>
 <body>
   <div>
 <span onClick = "changeImage('air-painted.jpg')">Air</span>
@@ -64,6 +82,9 @@ color: blue;
 </html>
 </style>
 
+
+
+<!--
 <body id="wormhole">
     <button onclick= "change('water-painted.jpg');">Water</button>
     <button onclick= "change('air-painted.jpg');">Air</button>
@@ -85,3 +106,4 @@ color: blue;
 </script>
 
 </html>
+-->
