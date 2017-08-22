@@ -1,109 +1,102 @@
-<!-- <!DOCTYPE html>
-<html>
-<style>
-body   {
-  background-color: black;
-  background-image: url("wormhole.png") no-repeat fixed center cover;
-  overflow: hidden;
-  top: 0%;
-  left: 25%;
-  transform: translate(0%, -25%);
-}
-  
-div  {
-    background-image: url("wormhole.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  -->
-
 <!DOCTYPE html>
 <html>
-<head>
-<style type="text/css">
-span   {
-    margin-left: 50px;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-span:hover   {
-    text-decoration: underline;
-    cursor: pointer;
-    color: blue;
-}
-</head>
-  
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-  
-.img-container {
-    min-height: 100%;
-    min-width: 1024px;
-          
-    width: 100%;
-    height: auto;
+<style>
 	
-    position: fixed center;
-    top: 0;
-    left: 0;
+<ul class = "cb-slideshow">
+	<li>
+	<span>Image 01</span>
+	<div>
+	<h3> fuck my life</h3>
+	</div>
+	</li>
+	<li>
+	<span>Image 02</span>
+	<div>
+	<h3> fuck my life more</h3>
+	</div>
+	</li>
+</ul>
+
+.cb-slideshow,
+.cb-slideshow:after  {
+	position: 100%;
+	width:100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 0:
 }
-.img-disp {
-    height: 400px;
-    width: 550px;
-    position: fixed center;
-    top: 0;
-    left: 0;
+.cb-slideshow:after   {
+	content: '';
+	background: transparent url("wormhole.png") repeat top left;
+}
+.cb-slideshow li span   {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	color: transparent;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: none;
+	opacity: 0;
+	z-index: 0;
+	animation: imageAnimation 6s linear infinite 0s;
+}
+.cb-slideshow li div   {
+	z-index: 1000;
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	animation: titleAnimation 6s linear infinite 0s;
+}
+.cb-slideshow li div h3   {
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+        font-size: 240px;
+        padding: 0;
+        line-height: 200px; 
+}
+.cb-slideshow li:nth-child(1) span { 
+        background-image: url(wormhole.png) 
+}
+.cb-slideshow li:nth-child(2) span { 
+        background-image: url(water-painted.jpg);
+        animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    16% { opacity: 1; animation-timing-function: ease-out; }
+    33% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
 }
 
-
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    16% { opacity: 1 }
+    33% { opacity: 1 }
+    35% { opacity: 0 }
+    100% { opacity: 0 }
+}
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+@media screen and (max-width: 1140px) { 
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) { 
+    .cb-slideshow li div h3 { font-size: 80px }
+}
 </style>
 <body>
-  <div>
-<span type="button" onClick="changeImage('air-painted.jpg')">Air</span>
-<span type="button" onClick="changeImage('earth-painted.jpg')">Earth</span>
-<span type="button" onClick="changeImage('fire-painted.jpg')">Fire</span>
-<span type="button" onClick="changeImage('water-painted.jpg')">Water</span>
-  </div>
-	<div class"img-container">
-    <img class="img-disp">
-  </div>
-
-
-  
-    <script>
-  function changeImage(imgName) {
-    var image = document.getElementByClassName('img-disp');
-    image.src = imgName;
-  }
-  </script>
+<div></div>
 </body>
 </html>
 
-
-
-
-<!--
-<body id="wormhole">
-    <button onclick= "change('water-painted.jpg');">Water</button>
-    <button onclick= "change('air-painted.jpg');">Air</button>
-    <button onclick= "change('fire-painted.jpg');">Fire</button>
-    <button onclick= "change('earth-painted.jpg');">Earth</button>
- 
-  </body>
-
-
-<script type="text/javascript" src="js/jquery-1.4.2.min.js">
-    function change(newImage)  {
-        var back = document.getElementbyId(wormhole);
-        back.body.style.backgroundImage = newImage;
-        background-repeat: no-repeat; 
-        background-alignment: fixed; 
-        background-position: center;
-        background-size: cover;
-    }
-</script>
-
-</html>
--->
