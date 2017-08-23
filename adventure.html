@@ -3,26 +3,27 @@
   <head>
     <script src="https://use.fontawesome.com/138f5edfea.js"></script>
     <link rel="stylesheet" href="styles.css">
+<link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
   </head>
 <body>
-  <div class="col-left col-display"><img id="air-img" src="air-painted.jpg" style="display:none; max-width: 800px;">
+  <div class="col-left col-display ">
+    <img id="air-img" class="img-styles" src="air-painted.jpg">
   </div>
-  <div class="col-right col-display container">
+  <div id="col-right" class="col-right col-display container">
     <div class="arrow" onclick="upNavigation()">
-      <i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
     </div>
     <div class="choices-container">
       <ul class="choice-list">
-        <li id="changing-words">Air</li>
+        <li id="changing-words">soar to new heights</li>
       </ul>
     </div>
     <div class="arrow" onclick="downNavigation()">
-      <i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
     </div>
-    <button onclick="changeImage()">Select</button>
+    <button class="button button1" onclick="changeImage()">SELECT</button>
   </div>
 </div>
   <script src="custom.js"></script>
-  <!-- <img id="air-img" src="air-painted.jpg" width="100" height="100" style="display:none"> -->
 </body>
 </html>
