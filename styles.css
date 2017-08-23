@@ -9,11 +9,55 @@ body {
 .col-display {
   display: inline-block;
   width: 50%;
+  height: 100vh;
 }
 .col-left {
   float: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .col-right {
-  float: right;
   text-align: center;
+  background-color: #840029
+}
+.img-styles{
+  max-width:100%;
+  max-height:100%;
+  min-height: 100%;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond';
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+.button1 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+}
+.fa-arrow-up, .fa-arrow-down {
+  color: white;
+}
+#changing-words {
+  color: white;
+  font-size: 18px;
+  font-family: 'Cormorant Garamond';
 }
