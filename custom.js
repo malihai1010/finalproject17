@@ -21,6 +21,7 @@ function upNavigation() {
     listElement.innerHTML = choices[current_word_index -1];
   }
 }
+
 function downNavigation(){
   // Get ul > li element
   var listElement = document.getElementById("changing-words");
@@ -62,10 +63,9 @@ function changeImage(imgName){
     image.src = 'fire-painted.jpg';
     document.getElementById("col-right").style.background = "#FFA099";
   }
-else if(current_word == "stir murky depths"){
+  else if(current_word == "stir murky depths"){
     image = document.getElementById('air-img');
     image.src = 'water-painted.jpg';
     document.getElementById("col-right").style.background = "#99B3FF";
   }
-   console.log(current_word)
 }
