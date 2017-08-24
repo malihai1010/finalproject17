@@ -21,6 +21,7 @@ function upNavigation() {
     listElement.innerHTML = choices[current_word_index -1];
   }
 }
+
 function downNavigation(){
   // Get ul > li element
   var listElement = document.getElementById("changing-words");
@@ -62,34 +63,9 @@ function changeImage(imgName){
     image.src = 'fire-painted.jpg';
     document.getElementById("col-right").style.background = "#FFA099";
   }
-else if(current_word == "stir murky depths"){
+  else if(current_word == "stir murky depths"){
     image = document.getElementById('air-img');
     image.src = 'water-painted.jpg';
     document.getElementById("col-right").style.background = "#99B3FF";
   }
-   console.log(current_word)
-function changeImage(imgName){
-  var current_word= document.getElementById("changing-words").innerHTML;
-    if(current_word == "Air"){
-    document.getElementById("air-img").style.display="block";
-    image = document.getElementById('air-img');
-    image.src = 'air-painted.jpg';
-  }
-    else if(current_word == "Earth"){
-    document.getElementById("air-img").style.display="block";
-    image = document.getElementById('air-img');
-    image.src = 'earth-painted.jpg';
-  }
-  else if(current_word == "Fire"){
-    document.getElementById("air-img").style.display="block";
-    image = document.getElementById('air-img');
-    image.src = 'fire-painted.jpg';
-  }
-else if(current_word == "Water"){
-    document.getElementById("air-img").style.display="block";
-    image = document.getElementById('air-img');
-    image.src = 'water-painted.jpg';
-  }
-   console.log(current_word)
-
 }
