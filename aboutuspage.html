@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href='https://fonts.googleapis.com/css?family=Amatica SC' rel='stylesheet'>
 <style type="text/css">
 body {
     margin: 0;
+}
+
+body {
+  font-family: 'Amatica SC';font-size: 22px;
+}
+    
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+  align-items: middle;
+  align-self: middle;
+  vertical-align:middle;
 }
 
 .zoomin img {
@@ -38,6 +52,26 @@ body {
     padding-left: 15px;
 }
     
+p {
+    font-family: 'Amatica SC';
+    font-size: 1vw;
+}
+
+/*p.thick {
+    font-weight: bold;
+}*/    
+
+#menu {
+    top: 0;
+    left: 0;
+    height: 3.5vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 70;
+    position: fixed;
+    background-color: #055C70;
+}
 /*p {
     font-family: 'Times New Roman', serif;
     font-size: 1vw;
@@ -50,6 +84,7 @@ ul {
     width: 15%;
     background-color: #ffdace;
     position: fixed;
+    height: 8%;
     height: 20%;
 /*--< overflow: auto;>*/
 }
@@ -68,6 +103,10 @@ ul {
     display: block;
 }
     
+li {
+    float: left;
+}
+    
 li a {
     display: block;
     color: #000;
@@ -76,70 +115,90 @@ li a {
 }
 
 li a.active {
-    background-color: #4CAF50;
-    color: white;
+    /*background-color: #4CAF50;*/
+    color: black;
 }
 
 li a:hover:not(active) {
     background-color: #555;
-    color: white;
+    color: black;
 }
 
 img {
     border-radius: 50%;
     text-align: center;
 }
+
+body {
+    background-image: url("watercolor.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+}    
     
 </style>
 </head>
-<body style="background-color:#e2f3ff;">
+<body>
+      
     
-<ul>
-  <li><a class="active" href="mvp.html">Home</a></li>
-  <li><a class="active" href="marginnav.html">About</a></li>
+<ul id="menu" class"menu" style="color:white;">
+  <link href='https://fonts.googleapis.com/css?family=Amatica SC' rel='stylesheet'>
+  <li><a style="color:white;" class="active" href="wanderer.html">Home</a></li>
+  <li><a style="color:white;" class="active" href="aboutuspage.html">About</a></li>
+  <li><a style="color:white;" class="active" href="gallery.html">Gallery</a></li>
+  <li><a style="color:white;" class="active" href="contactus.html">Contact Us</a></li>
 </ul>
  
 <div>
+<h1 style = "color:black; margin-top:10vh;text-align:center;font-size:5vw;font-family: 'Amatica SC'">Meet The Creators</h1>  
+=======
 <h1 style = "margin-top:5vh;text-align:center;font-size:5vw;">Authors</h1>  
 <!--<hr style = "width:4vw;border-color:black;" size="10px">-->
 </div>
     
 <div class="zoomin">
-<img class="circular--square" src="castle.jpg" alt="Castle" <!--style="width:40vw" "width=400" height=300"-->
+<img class="circular--square" src="GWC.jpg" alt="GWC"> <!--style="width:40vw" "width=400" height=300"-->
 </div>
+<p style="color:black; text-align:center;font-size:2.5vw;font-family: 'Amatica SC';font-weight: bold;">
+Growing up is difficult, especially in an ideologically polarized society. With the difficulties presented in recent events such as the Charlottesville riot, the intensity of foreign affairs, and the troubles of
+daily life, too easily we give into hatred, impatience, and angry passion and lose sight of what is important. We miss the kid who used to believe in heroes and now with Wanderer, heroes do not only exist in books or in the movies. Wanderer is an interactive website that immerses users, one last time, in youthful fancy. We are kids at heart, after all. By bringing fictional universes, such as Middle-Earth in Lord of the Rings and the wizarding world in Harry Potter, to life, we hope to relax users and help their imaginations run wild. Wanderer was created using HTML, CSS, and JavaScript for its appearance and functionality. The site features original paintings, which are complemented with colors, music, and galaxy-type backgrounds that add to the illusion of travel. Overall, our aim was to remind users of all that is fantastical, good, and happy in life. We hope you enjoy Wanderer!
+ </p>
 <br>
 <!--<div style="margin-left:15%;padding:1px 16px;height:1000px;">-->
+
+<p style="color:black; text-align:center;font-size:2vw;font-family: 'Amatica SC'">Let's get a little personal</p>
 <p style="text-align:center;font-size:2vw;font-family: 'Amatica SC'">The creators of this website have worked for hours to overcome simple frustrations such as a missing quotaion mark or a simple syntax error, frustrations only coders would understand.
    But through the flames of struggle that we've endured comes this amazing project and as unfinished as it may seem, we are all very proud of it. </p>
 <p style="text-align:center;font-size:2vw">Let's get a little personal</p>
 
 <div class="container">    
     <div class="row">
-      <div class="col-sm-3">      
+      <!--<div style= "font-">-->
+       <div class="col-sm-3">      
         <div class="zoomin">
-            <img class="circular--square2" src="borzoi.jpg" alt="Maliha">
-            <h2 style="text-align:center">Maliha</h2>
-            <p style="text-align:center">I was born on October 10, 2000. I attend Queens High School for the Sciences and am now a senior, meaning college applications and less hair (woohoo). I love music (especially singing) and occasionally drawing, even though the mess of paint afterwards is exhausting. I have just learned how to code so bear with me, please!</p>
+            <img class="circular--square2" src="windowcolumbiapic.png" alt="Maliha">
+            <h2 style="color:black;text-align:center;font-size:2.5vw;font-family: 'Amatica SC'">Maliha</h2>
+            <p style="color:black;font-size:1.7vw;text-align:center">I was born on October 10, 2000. I attend Queens High School for the Sciences and am now a senior, meaning college applications and less hair (woohoo). I love music (especially singing) and occasionally painting, even though the mess of paint afterwards is exhausting. I don't sleep very much and I've pulled a few allnighters for this website so enjoy!</p>
         </div>
       </div>
         <div class="zoomin">
-            <img class="circular--square2" src="borzoi.jpg" alt="Ginevra">
-            <h2 style="text-align:center">Ginevra</h2>
-            <p style="text-align:center">Insert you're bio here</p>
+            <img class="circular--square2" src="20160419_155406-1.jpg" alt="Ginevra">
+            <h2 style="color:black;text-align:center;font-size:2.5vw;font-family: 'Amatica SC'">Ginevra</h2>
+            <p style="color:black;font-size:1.7vw;text-align:center">I was born on December 29, 2000. I had an amazing childhood and I love that I am going to college soon! Even though I like the arts like piano and painting, I most definitely want to pursue a tech related major in college after being in this program. This program opened my eyes to the joy of coding and programming so I hope to use this skill to bring my future ideas to life!</p>
         </div>
       </div>
         <div class="zoomin">
-            <img class="circular--square2" src="borzoi.jpg" alt="Mariana">
-            <h2 style="text-align:center">Mariana</h2>
-            <p style="text-align:center">I was born on April 9 2000. I go to Bronx Preparatory Charter School, i have gone to that school from the fifth to twelveth grade. I love to dance Salsa and eating!</p>
+            <img class="circular--square2" src="mar.jpg" alt="Mariana">
+            <h2 style="color:black;text-align:center;font-size:2.5vw;font-family: 'Amatica SC'">Mariana</h2>
+            <p style="color:black;font-size:1.7vw;text-align:center">I was born on April 9, 2000. I go to Bronx Preparatory Charter School. I have gone to that school for so long, from Fifth grade and am now a senior. My favorite book is The Magicians (I RECOMMEND EVERYONE READ IT) I love to dance salsa and eat!</p>
         </div>
       </div>
         <div class="zoomin">
-            <img class="circular--square2" src="borzoi.jpg" alt="Noelia">
-            <h2 style="text-align:center">Noelia</h2>
-            <p style="text-align:center">Insert you're bio here</p>
+            <img class="circular--square2" src="IMG_5624.jpg" alt="Noelia">
+            <h2 style="color:black;text-align:center;font-size:2.5vw;font-family: 'Amatica SC'">Noelia</h2>
+            <p style="color:black;font-size:1.7vw;text-align:center">I like ice cream.</p>
         </div>
       </div>
+     </div>
     </div>
 </div>
     

@@ -1,4 +1,4 @@
-var choices = ["Air","Earth","Fire","Water"];
+var choices = ["soar to new heights","roam the roads of lands remote","rise from the ashes","stir murky depths"];
 
 function upNavigation() {
   // Get ul > li element
@@ -38,8 +38,36 @@ function downNavigation(){
     // Change the text inside the li
       // Find the word at next index by increasing current_word_index by 1
     listElement.innerHTML = choices[current_word_index +1];
+    // document.getElementById("col-right").style.background = colors[current_word_index + 1]
   }
 }
+
+function changeImage(imgName){
+  var listElement = document.getElementById("changing-words");
+  console.log(listElement);
+  // Get the text inside the li element
+  var current_word = listElement.textContent;
+    if(current_word == "soar to new heights"){
+    image = document.getElementById('air-img');
+    image.src = 'air-painted.jpg';
+    document.getElementById("col-right").style.background = "#840029";
+  }
+    else if(current_word == "roam the roads of lands remote"){
+    image = document.getElementById('air-img');
+    image.src = 'earth-painted.jpg';
+    document.getElementById("col-right").style.background = "#846500";
+  }
+  else if(current_word == "rise from the ashes"){
+    image = document.getElementById('air-img');
+    image.src = 'fire-painted.jpg';
+    document.getElementById("col-right").style.background = "#FFA099";
+  }
+else if(current_word == "stir murky depths"){
+    image = document.getElementById('air-img');
+    image.src = 'water-painted.jpg';
+    document.getElementById("col-right").style.background = "#99B3FF";
+  }
+   console.log(current_word)
 function changeImage(imgName){
   var current_word= document.getElementById("changing-words").innerHTML;
     if(current_word == "Air"){
