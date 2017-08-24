@@ -60,12 +60,12 @@ function changeImage(imgName){
   else if(current_word == "rise from the ashes"){
     image = document.getElementById('air-img');
     image.src = 'fire-painted.jpg';
-    document.getElementById("col-right").style.background = "#FF7066";
+    document.getElementById("col-right").style.background = "#FFA099";
   }
 else if(current_word == "stir murky depths"){
     image = document.getElementById('air-img');
     image.src = 'water-painted.jpg';
-    document.getElementById("col-right").style.background = "#7500FF";
+    document.getElementById("col-right").style.background = "#99B3FF";
   }
    console.log(current_word)
 }
