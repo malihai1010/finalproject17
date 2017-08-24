@@ -5,6 +5,7 @@ body {
 
 .choice-list {
   list-style-type: none;
+  padding-left: 20px;
 }
 .col-display {
   display: inline-block;
@@ -19,6 +20,10 @@ body {
 .col-right {
   text-align: center;
   background-color: #840029
+}
+.col-right-content-position{
+  margin-top: 250px;
+  margin-bottom: 150px;
 }
 .img-styles{
   max-width:100%;

@@ -34,20 +34,28 @@ p {
 }
 
 .button {
-  background-color: Transparent;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 12px 32px;
   text-align: center;
-  align-items: middle;
-  align-self: middle;
-  vertical-align:middle;
+  vertical-align: middle;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
   cursor: pointer;
+  font-family: 'Cormorant Garamond';
+  letter-spacing: 2px;
 }
+.button {
+  background-color: transparent;
+  border: 1px solid white;
+}
+.button:hover {
+  background-color: white;
+  color: black;
 
 </style>
 
@@ -61,14 +69,15 @@ p {
   <h1>WANDERER</h1>
   <h2>A Whole world waiting to be discovered...</h2>
     <p>
-<a style="font-family: 'Amatica SC';font-size: 27px; color:white;" href="https://malihai1010.github.io/finalproject17/adventure.html" background-color= "Transparent" align-self= "middle"
-      target="_blank">BEGIN</a>
+  <a class="button" style="font-family: 'Amatica SC';font-size: 27px;" href="./adventure.html" background-color= "Transparent" align-self= "middle">BEGIN</a>
+
+
 
         <audio autoplay>
           <source src="experience.mp3" type="audio/mpeg">
           </audio>
 
     </p>
- 
+
   </body>
   </html>
